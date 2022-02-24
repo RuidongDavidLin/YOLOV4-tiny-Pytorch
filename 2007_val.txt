@@ -1,0 +1,9 @@
+/root/Desktop/yolov4tiny/VOCdevkit/VOC2007/JPEGImages/100014.jpg 684,161,824,372,0
+/root/Desktop/yolov4tiny/VOCdevkit/VOC2007/JPEGImages/100027.jpg 664,198,807,376,0
+/root/Desktop/yolov4tiny/VOCdevkit/VOC2007/JPEGImages/200013.jpg 522,158,724,370,1
+/root/Desktop/yolov4tiny/VOCdevkit/VOC2007/JPEGImages/200017.jpg 715,230,893,421,1
+/root/Desktop/yolov4tiny/VOCdevkit/VOC2007/JPEGImages/200018.jpg 573,176,738,341,1
+/root/Desktop/yolov4tiny/VOCdevkit/VOC2007/JPEGImages/300003.jpg 720,30,942,234,2
+/root/Desktop/yolov4tiny/VOCdevkit/VOC2007/JPEGImages/300006.jpg 560,150,707,290,2
+/root/Desktop/yolov4tiny/VOCdevkit/VOC2007/JPEGImages/300010.jpg 678,174,880,338,2
+/root/Desktop/yolov4tiny/VOCdevkit/VOC2007/JPEGImages/300018.jpg 549,103,900,383,2

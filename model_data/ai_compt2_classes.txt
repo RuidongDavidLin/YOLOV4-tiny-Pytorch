@@ -1,0 +1,4 @@
+meat
+vegetable
+fruit
+beverage
