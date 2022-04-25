@@ -27,8 +27,8 @@ if __name__ == "__main__":
     #   video_path、video_save_path和video_fps仅在mode='video'时有效
     #   保存视频时需要ctrl+c退出或者运行到最后一帧才会完成完整的保存步骤。
     #-------------------------------------------------------------------------#
-    video_path      = 0
-    video_save_path = ""
+    video_path      = "kkyyk.mp4"
+    video_save_path = "video.mp4"
     video_fps       = 25.0
     #-------------------------------------------------------------------------#
     #   test_interval用于指定测量fps的时候，图片检测的次数
@@ -71,6 +71,7 @@ if __name__ == "__main__":
             out     = cv2.VideoWriter(video_save_path, fourcc, video_fps, size)
 
         fps = 0.0
+        i = 1
         while(True):
             t1 = time.time()
             # 读取某一帧
@@ -80,7 +81,18 @@ if __name__ == "__main__":
             # 转变成Image
             frame = Image.fromarray(np.uint8(frame))
             # 进行检测
-            data = yolo.detect_image(frame, isRetImg=True)
+            datas = yolo.detect_image(frame, isRetImg=False)
+            print(datas)
+            # if len(datas['img']) != 0:
+            #     for image in datas['img']:
+            #         if i == 1:
+            #             cv2.imwrite('recog.jpg', image)
+            #             i += 1
+            labelCache = []
+            for label in datas['labels']:
+                labelCache.append(label)
+            if 0 in labelCache:
+                print("kitcken")
             frame = np.array(yolo.detect_image(frame, isRetImg=True)['img'])
             # RGBtoBGR满足opencv显示格式
             frame = cv2.cvtColor(frame,cv2.COLOR_RGB2BGR)

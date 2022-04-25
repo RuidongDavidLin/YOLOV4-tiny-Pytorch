@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>water</folder>
+<filename>water00025.jpg</filename>
+<path>C:\Users\Ruidong Lin\Desktop\train_data\water\water00025.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1280</width>
+    <height>720</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>water</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>449</xmin>
+        <ymin>196</ymin>
+        <xmax>551</xmax>
+        <ymax>485</ymax>
+    </bndbox>
+</object>
+</annotation>
